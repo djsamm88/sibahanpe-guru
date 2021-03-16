@@ -52,8 +52,8 @@
 												b.jam AS jam_keluar,
 												b.waktu AS waktu_keluar,
 
-												GREATEST((TIME_TO_SEC(TIMEDIFF(a.jam_masuk,'07:30:00'))/60),0) AS telat_masuk,
-												GREATEST((TIME_TO_SEC(TIMEDIFF('16:00:00',b.jam))/60),0) AS cepat_pulang
+												GREATEST((TIME_TO_SEC(TIMEDIFF(a.jam_masuk,'07:45:00'))/60),0) AS telat_masuk,
+												GREATEST((TIME_TO_SEC(TIMEDIFF('13:30:00',b.jam))/60),0) AS cepat_pulang
 
 												FROM
 												hr_staff_info c
@@ -109,8 +109,8 @@
 												b.jam AS jam_keluar,
 												b.waktu AS waktu_keluar,
 
-												GREATEST((TIME_TO_SEC(TIMEDIFF(a.jam_masuk,'07:30:00'))/60),0) AS telat_masuk,
-												GREATEST((TIME_TO_SEC(TIMEDIFF('16:00:00',b.jam))/60),0) AS cepat_pulang
+												GREATEST((TIME_TO_SEC(TIMEDIFF(a.jam_masuk,'07:45:00'))/60),0) AS telat_masuk,
+												GREATEST((TIME_TO_SEC(TIMEDIFF('13:30:00',b.jam))/60),0) AS cepat_pulang
 
 												FROM
 												hr_staff_info c
@@ -167,11 +167,11 @@
 				//jumat puasa
 				if(date('D', strtotime($date)) =='Fri')
 				{
-					$jam_masuk = '08:00:00';
-					$jam_keluar= '16:00:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}else{
-					$jam_masuk = '08:00:00';
-					$jam_keluar= '15:30:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}
 
 			}else{
@@ -179,11 +179,11 @@
 				//jumat biasa
 				if(date('D', strtotime($date)) =='Fri')
 				{
-					$jam_masuk = '07:30:00';
-					$jam_keluar= '16:30:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}else{
-					$jam_masuk = '07:30:00';
-					$jam_keluar= '16:00:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}
 			}
 
@@ -258,8 +258,8 @@
 												b.jam AS jam_keluar,
 												b.waktu AS waktu_keluar,
 
-												GREATEST((TIME_TO_SEC(TIMEDIFF(a.jam_masuk,'07:30:00'))/60),0) AS telat_masuk,
-												GREATEST((TIME_TO_SEC(TIMEDIFF('16:00:00',b.jam))/60),0) AS cepat_pulang
+												GREATEST((TIME_TO_SEC(TIMEDIFF(a.jam_masuk,'07:45:00'))/60),0) AS telat_masuk,
+												GREATEST((TIME_TO_SEC(TIMEDIFF('13:30:00',b.jam))/60),0) AS cepat_pulang
 
 												FROM
 												hr_staff_info c
@@ -313,11 +313,11 @@
 				//jumat puasa
 				if(date('D', strtotime($date)) =='Fri')
 				{
-					$jam_masuk = '08:00:00';
-					$jam_keluar= '16:00:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}else{
-					$jam_masuk = '08:00:00';
-					$jam_keluar= '15:30:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}
 
 			}else{
@@ -325,11 +325,11 @@
 				//jumat biasa
 				if(date('D', strtotime($date)) =='Fri')
 				{
-					$jam_masuk = '07:30:00';
-					$jam_keluar= '16:30:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}else{
-					$jam_masuk = '07:30:00';
-					$jam_keluar= '16:00:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}
 			}
 
@@ -462,13 +462,13 @@
 
 	    	$fid = $this->fid_by_nik($nik);
 
-				$jam_masuk_puasa = '08:00:00';
-				$jam_keluar_jumat_puasa= '16:00:00';
-				$jam_keluar_puasa= '15:30:00';
+				$jam_masuk_puasa = '07:45:00';
+				$jam_keluar_jumat_puasa= '13:30:00';
+				$jam_keluar_puasa= '13:30:00';
 			
-				$jam_masuk = '07:30:00';
-				$jam_keluar_jumat= '16:30:00';
-				$jam_keluar= '16:00:00';
+				$jam_masuk = '07:45:00';
+				$jam_keluar_jumat= '13:30:00';
+				$jam_keluar= '13:30:00';
 			
 			$tgl_awal_puasa = '0000-00-00';
 			$tgl_akhir_puasa = '0000-00-00';
@@ -600,11 +600,11 @@
 				//jumat puasa
 				if(date('D', strtotime($date)) =='Fri')
 				{
-					$jam_masuk = '08:00:00';
-					$jam_keluar= '16:00:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}else{
-					$jam_masuk = '08:00:00';
-					$jam_keluar= '15:30:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}
 
 			}else{
@@ -612,11 +612,11 @@
 				//jumat biasa
 				if(date('D', strtotime($date)) =='Fri')
 				{
-					$jam_masuk = '07:30:00';
-					$jam_keluar= '16:30:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}else{
-					$jam_masuk = '07:30:00';
-					$jam_keluar= '16:00:00';
+					$jam_masuk = '07:45:00';
+					$jam_keluar= '13:30:00';
 				}
 			}
 
